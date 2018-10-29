@@ -3,6 +3,7 @@
 dependencies: []
 
 galaxy_info:
+  role_name: 'upgrade'
   author: 'Adfinis SyGroup AG'
   description: 'Update and upgrade systems'
   company: 'Adfinis SyGroup AG'
