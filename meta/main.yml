@@ -25,4 +25,4 @@ galaxy_info:
         - 7
   galaxy_tags:
     - upgrade
-    - dist-upgrade
+    - distupgrade
