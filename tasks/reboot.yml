@@ -1,0 +1,8 @@
+---
+
+- name: reboot the machine
+  reboot:
+  tags:
+    - 'role::upgrade'
+    - 'role::upgrade::reboot'
+  when: reboot is defined and reboot
