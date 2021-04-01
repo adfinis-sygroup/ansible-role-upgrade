@@ -9,6 +9,7 @@
     - 'role::upgrade:install'
   when: ansible_os_family == 'Debian' and
         dist_upgrade is defined and dist_upgrade
+  notify: reboot_machine
 
 - name: upgrade redhat based systems
   yum:
@@ -20,3 +21,4 @@
     - 'skip_ansible_lint'
   when: ansible_os_family == 'RedHat' and
         dist_upgrade is defined and dist_upgrade
+  notify: reboot_machine
