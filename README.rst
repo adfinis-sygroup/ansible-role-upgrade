@@ -36,7 +36,7 @@ running your playbook (`dist_upgrade`, `reboot`). For example:
 
 .. code-block:: bash
 
-$ ansible-playbook -i hosts playbook.yml --extra-vars dist_upgrade=True --extra-vars reboot
+$ ansible-playbook -i hosts playbook.yml --extra-vars dist_upgrade=True --extra-vars reboot=True
 
 
 Dependencies
@@ -71,4 +71,3 @@ Author Information
 upgrade role was written by:
 
 * Adfinis SyGroup AG | `Website <https://www.adfinis-sygroup.ch/>`_ | `Twitter <https://twitter.com/adfinissygroup>`_ | `GitHub <https://github.com/adfinis-sygroup>`_
-
