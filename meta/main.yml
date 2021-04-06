@@ -17,6 +17,7 @@ galaxy_info:
         - stretch
     - name: Ubuntu
       versions:
+        - focal
         - trusty
         - xenial
     - name: EL

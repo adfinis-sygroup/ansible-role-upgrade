@@ -31,6 +31,13 @@ that can/should be set via parameters to the role. Any variables that are read
 from other roles and/or the global scope (ie. hostvars, group vars, etc.)
 should be mentioned here as well.
 
+To actually upgrade the machine, you will have to use some `extra-vars` while 
+running your playbook (`dist_upgrade`, `reboot`). For example:
+
+.. code-block:: bash
+
+$ ansible-playbook -i hosts playbook.yml --extra-vars dist_upgrade=True --extra-vars reboot=True
+
 
 Dependencies
 =============
@@ -52,7 +59,6 @@ passed in as parameters) is always nice for users too:
     roles:
        - { role: adfinis-sygroup.upgrade }
 
-
 License
 ========
 
@@ -65,4 +71,3 @@ Author Information
 upgrade role was written by:
 
 * Adfinis SyGroup AG | `Website <https://www.adfinis-sygroup.ch/>`_ | `Twitter <https://twitter.com/adfinissygroup>`_ | `GitHub <https://github.com/adfinis-sygroup>`_
-
