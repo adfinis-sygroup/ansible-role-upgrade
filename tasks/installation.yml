@@ -2,7 +2,7 @@
 
 - name: upgrade debian based systems
   apt:
-    update_cache: yes
+    update_cache: yes # yamllint disable-line rule:truthy
     upgrade: dist
   tags:
     - 'role::upgrade'
